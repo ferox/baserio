@@ -10,4 +10,6 @@ Vamos juntos?
 
 Onde?
 
-No Oito, Av. Visconde de Pirajá, 54. 
+No Oito, Av. Visconde de Pirajá, 54.
+
+Às 20:00.
