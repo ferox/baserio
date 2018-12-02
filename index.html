@@ -1,0 +1,125 @@
+---
+layout: default
+title: Base Rio
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Seja Bem-Vindo(a) a Base RIO</h1>
+				<p class="editable">Conectamos pessoas, organizações e sociedade com a verdadeira revolução da inovação social.</p>
+				<!-- <div class="button">
+					<a href="#donate">Donate Now</a>
+				</div> -->
+			</div>
+		</div>
+		<div class="column">
+			<img src="/images/base-sampa-rafa.jpg" alt="Base Sampa">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">Como Fazemos?</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<!-- <h3 class="editable">Population</h3> -->
+			<p class="editable">Trabalhamos em Rede.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<!-- <h3 class="editable">Economy</h3> -->
+			<p class="editable">Somos todos agentes de transformação.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<!-- <h3 class="editable">Work Conditions</h3> -->
+			<p class="editable">Desenvolvemos líderes que enfrentam grandes desafios da humanidade.</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="/images/ubuntu.jpg" alt="Sheep">
+		</div>
+		<div>
+			<h2 class="editable">Qual é seu legado?</h2>
+
+			<p class="editable">"Seja a mudança que você quer no mundo."</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<p class="quote editable">Devemos desenvolver habilidades para a liderança coletiva, mas nosso sistema educacional não está preparado para essa mudança. Por isso, as escolas de negócios terão de se reinventar. Imagino que o caminho seja mover-se da sala de aula para o mundo real, por meio de jornadas de aprendizagem e conexão com os grandes hubs de inovação.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/OS2.jpg" alt="Otto"></span>
+				<span class="author editable"><strong>Otto Scharmer</strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Faça parte dessa revolução!</h2>
+		<p class="editable" style="text-align: center;">Assine nossa newsletter para ficar por dentro do que estamos aprontando...</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="E-mail">
+			<input type="submit" value="Assinar"/>
+		</form>
+	</div>
+</div>
+
+<!-- <div class="container" id="donate">
+	<h2 class="editable">Make a donation</h2>
+	<div class="donate">
+		{{ site.donation_embed }}
+	</div>
+</div> -->
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Notícias</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<!-- Whitespace added for readability -->
+						{% assign mes = post.date | date: "%-m" %}
+						{% case mes %}
+  							{% when '1' %}<p class="date">{{ post.date | date: "%-d Janeiro, %Y" }}</p>
+  							{% when '2' %}<p class="date">{{ post.date | date: "%-d Fevereiro, %Y" }}</p>
+  							{% when '3' %}<p class="date">{{ post.date | date: "%-d Março, %Y" }}</p>
+  							{% when '4' %}<p class="date">{{ post.date | date: "%-d Abril, %Y" }}</p>
+  							{% when '5' %}<p class="date">{{ post.date | date: "%-d Maio, %Y" }}</p>
+  							{% when '6' %}<p class="date">{{ post.date | date: "%-d Junho, %Y" }}</p>
+  							{% when '7' %}<p class="date">{{ post.date | date: "%-d Julho, %Y" }}</p>
+  							{% when '8' %}<p class="date">{{ post.date | date: "%-d Agosto, %Y" }}</p>
+  							{% when '9' %}<p class="date">{{ post.date | date: "%-d Setembro, %Y" }}</p>
+  							{% when '10' %}<p class="date">{{ post.date | date: "%-d Outubro, %Y" }}</p>
+  							{% when '11' %}<p class="date">{{ post.date | date: "%-d Novembro, %Y" }}</p>
+  							{% when '12' %}<p class="date">{{ post.date | date: "%-d Dezembro, %Y" }}</p>
+						{% endcase %}
+						<!-- <p class="date">{{ post.date | date: "%-d %Y" }}</p> -->
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
