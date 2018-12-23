@@ -1,0 +1,110 @@
+%YAML 1.2
+# This file is managed in two places, please keep them synchronised:
+# - https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/apps-fp-o/files/apps.yaml
+# - https://github.com/fedora-infra/apps.fp.o/blob/develop/data/apps.yaml
+---
+name:   Mapa Base Colaborativa
+data:
+    description: >
+        Este é o Mapa da Base Colaborativa. A Base Colaborativa
+        é uma associação sem fins lucrativos que conecta pessoas,
+        organizações e sociedade com a verdadeira revolução da
+        inovação social.
+
+children:
+-   name:   São Paulo Capital
+    data:
+        url:    https://www.basecolaborativa.org
+        # TODO -- add source, bugs, and docs urls for this.
+        description: >
+            A sede da Base Colaboratica fica Rua Maestro Elias Lobo, 923
+            Jd. Paulista.
+    children:
+    -   name:   Instagram
+        data:
+            url:    https://www.instagram.com/basecolaborativa
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+    -   name:   Facebook
+        data:
+            url:    https://www.facebook.com/BaseSociedadeColaborativa/
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+-   name:   Núcleo Campinas
+    data:
+        url:    
+        
+        description: >
+    children:
+    -   name:   Instagram
+        data:
+            url:    https://www.instagram.com/basecolaborativa.campinas/
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+    -   name:   Facebook
+        data:
+            url:    https://www.facebook.com/BaseColaborativaCampinas
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >           
+-   name:   Núcleo Rio de Janeiro
+    data:
+        url:    
+        description: >
+    children:
+    -   name:   Instagram
+        data:
+            url:    https://www.instagram.com/basecolaborativa.rio
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+    -   name:   Facebook
+        data:
+            url:    https://www.facebook.com/basecolaborativariodejaneiro
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+-   name:   Projetos
+    data:
+        url:    
+        description: >
+            Conheça os Projetos de Impacto Social da Base.
+    children:
+    -   name:   Abacaxi
+        data:
+            url:    https://www.basecolaborativa.org/abacaxi
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+                O Abacaxi é um projeto de apoio a pequenos empreendedores nas periferias
+                e tem como objetivo ajudar na profissionalização dos negócios e
+                consequentemente aumentar a geração de renda das familias e da comunidade.
+    -   name:   Aquarela
+        data:
+            url:    https://www.basecolaborativa.org/aquarela
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+                O Aquarela é um projeto que visa a diversidade e inclusão no mundo que vivemos.
+                Com a ideia de levar a Base para lugares novos e trazer pessoas de diferentes
+                grupos para dentro da casa, o Aquarela tem como função ser essa ponte que conecta
+                diferentes mundos.
+    -   name:   PORCausa
+        data:
+            url:    https://www.basecolaborativa.org/porcausa
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+                O PORCausa é um projeto de incentivo à cultura de doação. Nosso objetivo é fazer
+                com que as pessoas adotem uma causa e arrecadem recursos para ela promovendo o
+                hábito de doar.
+    -   name:   Rizoma
+        data:
+            url:    https://www.basecolaborativa.org/rizoma
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+                O Rizoma é um projeto para crianças e adolescentes com foco no desenvolvimento
+                de competências socioemocionais (empatia, autonomia, resolução de problemas,
+                criatividade e resiliência) habilidades essenciais nos relacionamentos
+                interpessoais.
+    -   name:   Re.Juntar
+        data:
+            url:    https://www.basecolaborativa.org/rizoma
+            # TODO -- add source, bugs, and docs urls for this.
+            description: >
+                O projeto visa atender famílias que possuem menores que vivem em situação de
+                risco devido a precariedade de suas moradias.   

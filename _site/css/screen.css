@@ -361,9 +361,7 @@ footer {
   background: #f8fafb;
   padding: 60px 0; }
 
-@media screen and (max-width: 449px) {
-  /* If screen size less than 480px Load these styles /
-  / Done for Smart Phones */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     width: 85%;
     margin: 1px -1px;
