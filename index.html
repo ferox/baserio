@@ -93,7 +93,7 @@ title: Base Rio
 		<div class="posts">
 			{% for post in site.posts %}
 				<div class="post">
-					<div class="image" style="background-image: url({{ site.baseurl | append: '/' | append: post.featured_image}})" alt="Folder Base Papo de Dezembro de 2018"></div>
+					<div class="image" style="background-image: url({{ site.baseurl | append: '/' | append: post.featured_image}})" alt="{{ post.alt_image }}"></div>
 					<div class="post-content">
 						<!-- Whitespace added for readability -->
 						{% assign mes = post.date | date: "%-m" %}
