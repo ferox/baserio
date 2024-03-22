@@ -46,7 +46,7 @@ title: Base Rio
 <div class="container">
 	<div class="columns">
 		<div>
-			<img src="{{ site.baseurl }}/images/ubuntu.jpg" alt="Sheep">
+			<img src="{{ site.baseurl }}/images/ubuntu.jpg" alt="Ubuntu África">
 		</div>
 		<div>
 			<h2 class="editable">Qual é seu legado?</h2>
@@ -62,7 +62,7 @@ title: Base Rio
 		<p class="quote editable">Devemos desenvolver habilidades para a liderança coletiva, mas nosso sistema educacional não está preparado para essa mudança. Por isso, as escolas de negócios terão de se reinventar. Imagino que o caminho seja mover-se da sala de aula para o mundo real, por meio de jornadas de aprendizagem e conexão com os grandes hubs de inovação.</p>
 		<div class="attribute">
 			<p class="meta">
-				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/OS2.jpg" alt="Otto"></span>
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/OS2.jpg" alt="Foto do Otto"></span>
 				<span class="author editable"><strong>Otto Scharmer</strong></span>
 			</p>
 		</div>
@@ -90,7 +90,6 @@ title: Base Rio
 <div class="darker">
 	<div class="container">
 		<h2 class="editable">Notícias</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
 		<div class="posts">
 			{% for post in site.posts %}
 				<div class="post">
@@ -112,11 +111,9 @@ title: Base Rio
   							{% when '11' %}<p class="date">{{ post.date | date: "%-d Novembro, %Y" }}</p>
   							{% when '12' %}<p class="date">{{ post.date | date: "%-d Dezembro, %Y" }}</p>
 						{% endcase %}
-						<!-- <p class="date">{{ post.date | date: "%-d %Y" }}</p> -->
 						<h3>{{ post.title }}</h3>
 
 						{{ post.content }}
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
 					</div>
 				</div>
 			{% endfor %}
